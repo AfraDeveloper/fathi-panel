@@ -1,0 +1,92 @@
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dastnevis";
+
+  src: url("../fonts/DastNevis.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DastNevis.woff2") format("woff2"),
+    url("../fonts/DastNevis.woff") format("woff"),
+    url("../fonts/DastNevis.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "vazir" !important;
+  margin: 0;
+  padding: 0;
+
+  /* background-image: url("./../1.jpg"); */
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;  */
+}
+.apexcharts-legend-text {
+  font-family: "vazir" !important;
+  font-size: 16px !important;
+  color: white !important ;
+  padding: 0 4px !important;
+  display: inline-block !important;
+}
+.apexcharts-legend-series {
+  cursor: pointer;
+  line-height: normal;
+  margin: 8px !important;
+}
+.test {
+  background-color: #000000e6;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+select,
+input,
+option {
+  font-family: vazir;
+  border-radius: 4px;
+  /* color: black; */
+}
+option {
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
+.ottler {
+  max-height: calc(100vh - 6rem) !important;
+}
+
+table {
+  width: 100%;
+  color: #dcdde4;
+}
+span,
+a {
+  display: inline-block;
+}
+.badge {
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: initial;
+  line-height: 1;
+  padding: 0.5rem 0.7rem;
+  font-weight: 500;
+}

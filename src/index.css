@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@layer components {
+  .navlinks li {
+    @apply w-full h-12;
+  }
+  .navlinks li a {
+    @apply flex items-center gap-4 pr-4 h-full duration-200;
+  }
+  .navlinks li a :first-child {
+    @apply bg-[#292D3A] block rounded-md  p-2 h-8 w-8;
+  }
+  .navlink_active {
+    @apply border-r-4 border-r-sky-500 bg-[#0F1015] ml-4 rounded-l-full;
+  }
+
+  table tr > * {
+    @apply border border-[#2c2e33] duration-200;
+  }
+  table tr {
+    @apply hover:bg-gray-700 hover:text-white cursor-pointer;
+  }
+  table tr td,
+  table tr th {
+    @apply p-2;
+  }
+  table tr td {
+    @apply text-center text-[15px] text-[#dcdde4];
+  }
+  .success {
+    @apply border border-success text-success rounded-md;
+  }
+  .danger {
+    @apply border border-danger text-danger rounded-md;
+  }
+  .warning {
+    @apply border border-warning text-warning rounded-md;
+  }
+  .paginate {
+    @apply flex mt-8;
+  }
+  .paginate span {
+    @apply border h-9 w-8 flex justify-center items-center border-border-color cursor-pointer hover:bg-info;
+  }
+  .file_input {
+    @apply block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-violet-50 file:text-violet-700
+      hover:file:bg-violet-100;
+  }
+
+  .form-row {
+    @apply grid  gap-4 mb-4;
+  }
+  .form-group {
+    @apply mb-4;
+  }
+  .form-group input,
+  .form-group select {
+    @apply h-10 bg-slate-100 border border-slate-300 outline-none  rounded-sm w-full 
+    indent-1 focus:border-0 focus:outline-1 focus:outline-indigo-600 text-center text-gray-900 placeholder:text-xs;
+  }
+  textarea {
+    @apply text-gray-900 bg-slate-100 border border-slate-300 outline-none  rounded-sm indent-2 py-2;
+  }
+  .form-group label {
+    @apply mb-3 block text-sm text-gray-200;
+  }
+
+  .form-row-2 {
+    @apply grid-cols-1 sm:grid-cols-2 md:grid-cols-2;
+  }
+  .form-row-3 {
+    @apply grid-cols-2 sm:grid-cols-3 md:grid-cols-3;
+  }
+  .form-row-4 {
+    @apply grid-cols-2 sm:grid-cols-4 md:grid-cols-4;
+  }
+}
+@tailwind utilities;
